@@ -1,0 +1,283 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6986ce26748ed9b4983b98040876c146, type: 3}
+  m_Name: GameConfig
+  m_EditorClassIdentifier: 
+  configVersion: 3
+  startCoins: 60
+  startEnergy: 6
+  walkTime: 2
+  patience: 12
+  fastServeFraction: 0.35
+  lateScore: 0.4
+  vipCoinMultiplier: 2
+  vipPatienceMultiplier: 0.8
+  noWorkerFactor: 0.35
+  extraWorkerBonus: 0.5
+  levelSpeed:
+  - 1
+  - 1.35
+  - 1.75
+  levelCapacity: 010000000200000003000000
+  upgradeCostMult:
+  - 1
+  - 2.5
+  boostEnergyCost: 2
+  boostDuration: 12
+  boostMultiplier: 2
+  bottleneckQueue: 3
+  bottleneckWaitFraction: 0.5
+  star1: 40
+  star2: 70
+  star3: 90
+  winIsland: 1
+  winWaves: 10
+  needs:
+  - need: 0
+    displayName: Rooms
+    buildingName: Guest Hotel
+    spriteKey: rooms
+    baseServiceTime: 8
+    coinsPerServe: 6
+    upgradeCostBase: 70
+    weight: 1
+  - need: 1
+    displayName: Drinks
+    buildingName: Tiki Bar
+    spriteKey: bar
+    baseServiceTime: 4.8
+    coinsPerServe: 4
+    upgradeCostBase: 50
+    weight: 1
+  - need: 2
+    displayName: Food
+    buildingName: Restaurant
+    spriteKey: food
+    baseServiceTime: 7.2
+    coinsPerServe: 5
+    upgradeCostBase: 60
+    weight: 1
+  - need: 3
+    displayName: Relax
+    buildingName: Pool
+    spriteKey: pool
+    baseServiceTime: 8
+    coinsPerServe: 7
+    upgradeCostBase: 90
+    weight: 1
+  - need: 4
+    displayName: Ocean View
+    buildingName: Bungalows
+    spriteKey: bungalows
+    baseServiceTime: 9.6
+    coinsPerServe: 10
+    upgradeCostBase: 130
+    weight: 1
+  - need: 5
+    displayName: Spa
+    buildingName: Spa Pavilion
+    spriteKey: spa
+    baseServiceTime: 8.5
+    coinsPerServe: 9
+    upgradeCostBase: 120
+    weight: 1
+  islands:
+  - name: Palm Island
+    background: Backgrounds/island_main
+    fallbackBackground: Backgrounds/island_main
+    fallbackTint: {r: 1, g: 1, b: 1, a: 1}
+    backgroundPixels: {x: 1672, y: 941}
+    spawnPixel: {x: 790, y: 772}
+    freeWorkersPixel: {x: 700, y: 655}
+    unlockAfterWaves: 0
+    unlockCost: 0
+    startWorkers: 3
+    workersPerUnlock: 1
+    coinMultiplier: 1
+    guestMultiplier: 1
+    spacingMultiplier: 1
+    vipChance: 0
+    plots:
+    - need: 0
+      pixel: {x: 460, y: 355}
+      width: 250
+      unlockAfterWave: 0
+      unlockCost: 0
+      jungleLock: 0
+    - need: 1
+      pixel: {x: 435, y: 570}
+      width: 270
+      unlockAfterWave: 0
+      unlockCost: 0
+      jungleLock: 0
+    - need: 2
+      pixel: {x: 1160, y: 615}
+      width: 270
+      unlockAfterWave: 0
+      unlockCost: 0
+      jungleLock: 0
+    - need: 3
+      pixel: {x: 1230, y: 395}
+      width: 255
+      unlockAfterWave: 3
+      unlockCost: 200
+      jungleLock: 0
+    - need: 4
+      pixel: {x: 835, y: 235}
+      width: 250
+      unlockAfterWave: 6
+      unlockCost: 450
+      jungleLock: 1
+  - name: Coral Lagoon
+    background: Backgrounds/island_2
+    fallbackBackground: Backgrounds/island_main
+    fallbackTint: {r: 1, g: 0.86, b: 0.72, a: 1}
+    backgroundPixels: {x: 1672, y: 941}
+    spawnPixel: {x: 855, y: 835}
+    freeWorkersPixel: {x: 815, y: 690}
+    unlockAfterWaves: 8
+    unlockCost: 900
+    startWorkers: 4
+    workersPerUnlock: 1
+    coinMultiplier: 1.6
+    guestMultiplier: 1.25
+    spacingMultiplier: 0.95
+    vipChance: 0.2
+    plots:
+    - need: 0
+      pixel: {x: 655, y: 630}
+      width: 225
+      unlockAfterWave: 0
+      unlockCost: 0
+      jungleLock: 0
+    - need: 1
+      pixel: {x: 1078, y: 632}
+      width: 225
+      unlockAfterWave: 0
+      unlockCost: 0
+      jungleLock: 0
+    - need: 2
+      pixel: {x: 448, y: 475}
+      width: 220
+      unlockAfterWave: 0
+      unlockCost: 0
+      jungleLock: 0
+    - need: 5
+      pixel: {x: 1285, y: 492}
+      width: 230
+      unlockAfterWave: 2
+      unlockCost: 500
+      jungleLock: 0
+    - need: 3
+      pixel: {x: 553, y: 245}
+      width: 215
+      unlockAfterWave: 4
+      unlockCost: 700
+      jungleLock: 1
+    - need: 4
+      pixel: {x: 1175, y: 268}
+      width: 225
+      unlockAfterWave: 6
+      unlockCost: 900
+      jungleLock: 0
+  waves:
+  - guests: 5
+    spacing: 3
+    minNeeds: 1
+    maxNeeds: 1
+    weights:
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+  - guests: 7
+    spacing: 2.7
+    minNeeds: 1
+    maxNeeds: 1
+    weights:
+    - 1
+    - 1.5
+    - 1
+    - 1
+    - 1
+    - 1
+  - guests: 8
+    spacing: 2.55
+    minNeeds: 1
+    maxNeeds: 2
+    weights:
+    - 1
+    - 1
+    - 1.5
+    - 1
+    - 1
+    - 1
+  - guests: 9
+    spacing: 2.4
+    minNeeds: 1
+    maxNeeds: 2
+    weights:
+    - 1
+    - 1
+    - 1
+    - 1.5
+    - 1
+    - 1
+  - guests: 10
+    spacing: 2.2
+    minNeeds: 1
+    maxNeeds: 2
+    weights:
+    - 1.5
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1.5
+  - guests: 12
+    spacing: 2.05
+    minNeeds: 1
+    maxNeeds: 2
+    weights:
+    - 1
+    - 1.5
+    - 1.5
+    - 1
+    - 1
+    - 1
+  - guests: 13
+    spacing: 1.85
+    minNeeds: 1
+    maxNeeds: 2
+    weights:
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1.5
+    - 1
+  - guests: 15
+    spacing: 1.7
+    minNeeds: 2
+    maxNeeds: 2
+    weights:
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+  endlessExtraGuests: 2
+  endlessSpacingMult: 0.95
+  minSpacing: 1.4
